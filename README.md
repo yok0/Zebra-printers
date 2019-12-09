@@ -1,8 +1,8 @@
 # Zebra printers
  Change SNMP via command line.
  
-# Usage
-
+## Usage
+```
 Usage: $0 [-RW -D -P -p -s -r -h] <IP or hostname>"
 
 -R 'string'	Read/get coommunity string
@@ -13,11 +13,11 @@ Usage: $0 [-RW -D -P -p -s -r -h] <IP or hostname>"
 -s		Save the current configuration
 -r		Reboot the printer [ all printers ]
 -h 		Displays this help message
+```
+> ! Put SNMP community strings in single quotes - 'comunity_string'
 
-! Put SNMP community strings in single quotes - 'comunity_string'
-
-# Examples:
-
+## Examples:
+```
 Set community strings and reboot
  ./zebra.sh -R 'READ_string' -W 'WRITE_string' -r 192.168.100.155
  
@@ -32,4 +32,4 @@ Change default port and community strings, save configuration and reload
  
 Reboot the printer 
  ./zebra.sh -r 192.168.100.155
- 
+ ```
